@@ -55,7 +55,7 @@
             </Label>
             <ImageView fx:id="imgSeria" fitHeight="263.0" fitWidth="200.0" layoutX="31.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" />
             <ScrollBar layoutX="317.0" layoutY="198.0" orientation="VERTICAL" prefHeight="201.0" prefWidth="14.0" />
-            <ComboBox fx:id="llistaTemporades" layoutX="257.0" layoutY="113.0" onAction="#triarTemporada" prefHeight="25.0" prefWidth="236.0" />
+            <ComboBox fx:id="llistaTemporades" layoutX="257.0" layoutY="113.0" onAction="#triarTemporada" prefHeight="25.0" prefWidth="236.0" promptText="Tria una temporada" />
          </children>
       </Pane>
    </center>
