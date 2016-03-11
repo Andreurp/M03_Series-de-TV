@@ -59,7 +59,7 @@ public class SeriesTVController {
         buscar.sendKeys(nom);
         buscar.submit();
         
-        WebElement boxSeries = navegador.findElement(By.cssSelector("div.date-outer div.post-header"));
+        WebElement boxSeries = navegador.findElement(By.className("post-header"));
 		WebElement divSeries = boxSeries.findElement(By.cssSelector("div:nth-child(3)"));
 		List<WebElement> series = divSeries.findElements(By.tagName("img"));
 
