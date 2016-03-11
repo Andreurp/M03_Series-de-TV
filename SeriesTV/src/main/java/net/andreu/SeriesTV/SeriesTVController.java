@@ -23,6 +23,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.Label;
 
 import javafx.scene.control.ComboBox;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 import javafx.scene.input.MouseEvent;
@@ -84,10 +85,11 @@ public class SeriesTVController {
 				llistaTemporades.getItems().add(temporades.getText());
 			}
 			
-			/*WebElement img = navegador.findElement(By.id("port_serie"));
-	        //String imatge = img.getAttribute("src");
-			Image imatge = new Image(img.getAttribute("src"));
-	        imgSeria.setImage(imatge);*/
+			WebElement img = navegador.findElement(By.id("port_serie"));
+	        String url = img.getAttribute("src");
+	        System.out.println(url);
+			Image imatge = new Image(url);
+	        imgSeria.setImage(imatge);
 		}
 	}
 
